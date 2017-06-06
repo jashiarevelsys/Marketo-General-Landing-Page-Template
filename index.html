@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>General Landing Page Template</title>
+    <link href="//templates.marketo.net/template1/css/bootstrap.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/main-lp.css">
+    <!-- mkto input fields -->
+    <meta class="mktoBoolean" id="showTopValueHero" mktoName="Show top value hero?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="topValueHeroProp" mktoName="Top Value Hero Prop" default="This is my default value" allowHtml="true">
+	<meta class="mktoString" id="topValueHeroSub" mktoName="Top Value Hero Sub" default="This is my default value" allowHtml="true">
+
+	<meta class="mktoBoolean" id="showTopFormSection" mktoName="Show top value hero?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="topFormSectionStyle" mktoName="Form Section Style: left, right, or center. Lowercase." default="left" allowHtml="true">
+	<meta class="mktoString" id="topFormCTA" mktoName="Top Form CTA" default="This is my default value" allowHtml="true">
+	<meta class="mktoString" id="topFormSub" mktoName="Top Form Sub" default="This is my default value" allowHtml="true">
+
+	<meta class="mktoBoolean" id="showThreeFeaturePointsSection" mktoName="Show 3 Feature Points Section?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="threeFeatureCTA" mktoName="Three Feature CTA" default="This is my default value" allowHtml="true">
+	<meta class="mktoString" id="threeFeatureSub" mktoName="Three Feature Sub" default="This is my default value" allowHtml="true">
+
+
+	<meta class="mktoBoolean" id="showTwoPointsSection" mktoName="Show 2 Points Section?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="customerCTA" mktoName="Customer CTA" default="This is my default value" allowHtml="true">
+	<meta class="mktoString" id="customerSub" mktoName="Customer Sub" default="This is my default value" allowHtml="true">
+
+	<meta class="mktoBoolean" id="showBottomFormSection" mktoName="Show bottom form?" default="false" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="bottomFormSectionStyle" mktoName="Form Section Style: left, right, or center. Lowercase." default="left" allowHtml="true">
+	<meta class="mktoString" id="bottomFormCTA" mktoName="Bottom Form CTA" default="This is my default value" allowHtml="true">
+	<meta class="mktoString" id="bottomFormSub" mktoName="Bottom Form Sub" default="This is my default value" allowHtml="true">
+</head>
+<body>
+	<header></header>
+	<section class="top-value-hero" style="display:${showTopValueHero};">
+		<div class="container">
+			<h1>${topValueHeroProp}</h1>
+			<h2>${topValueHeroSub}</h2>
+		</div>
+	</section>
+	<section class="top-form-section ${topFormSectionStyle}" style="display:${showTopFormSection};">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 form-wrap">
+					<h2>${topFormCTA}</h2>
+					<h3>${topFormSub}</h3>
+					<div class="mktoForm" id="marketoFormSelector" mktoName="Choose a form here"></div>
+				</div>
+				<div class="col-sm-6 form-section-text-images-video-wrap">
+					<div class="text-area">
+						<div class="mktoText" id="formSectionTopText1" mktoName="Form Section Top Text">
+							Optionally add default text for the editable text area.
+						</div>
+					</div>
+					<div class="img-area">
+						<img class="mktoImg" id="formAreaImg" mktoName="Form Area Image">
+					</div>
+    				<div class="video-area">
+    					<div class="mktoVideo" id="youTubeVideo" mktoName="Video Hosted on YouTube"></div>
+						<div class="mktoText" id="otherVideo" mktoName="Other Video Platform ex. Wistia, Vimeo embed code"></div>
+    				</div>
+					<div class="text-area">
+						<div class="mktoText" id="formSectionTopText2" mktoName="Form Section Bottom Text">
+							Optionally add default text for the editable text area.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="3-feature-points" style="display:${showThreeFeaturePointsSection};">
+		<div class="container">
+			<h2>${threeFeatureCTA}</h2>
+			<h3>${threeFeatureSub}</h3>
+			<div class="row">
+				<div class="col-sm-4">
+					<img class="mktoImg" id="threeFeatureImg1" mktoName="Three Feature Img 1">					
+					<div class="mktoText" id="threeFeatureText1" mktoName="Three Feature Text 1">
+						Optionally add default text for the editable text area.
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<img class="mktoImg" id="threeFeatureImg2" mktoName="Three Feature Img 2">					
+					<div class="mktoText" id="threeFeatureText2" mktoName="Three Feature Text 2">
+						Optionally add default text for the editable text area.
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<img class="mktoImg" id="threeFeatureImg3" mktoName="Three Feature Img 3">			
+					<div class="mktoText" id="threeFeatureText3" mktoName="Three Feature Text 3">
+						Optionally add default text for the editable text area.
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="2-points" style="display:${showTwoPointsSection};">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<h2>${customerCTA}</h2>
+					<h3>${customerSub}</h3>
+					<img class="mktoImg" id="customerLogo1" mktoName="Customer Logo 1">
+					<img class="mktoImg" id="customerLogo2" mktoName="Customer Logo 2">
+					<img class="mktoImg" id="customerLogo3" mktoName="Customer Logo 3">
+				</div>
+				<div class="col-sm-6 ">
+					<img class="mktoImg" id="customerImg1" mktoName="Customer Image">
+					<div class="mktoVideo" id="customerVideo" mktoName="Customer Video"></div>					
+				</div>
+				<div class="col-sm-6 ">
+					<img class="mktoImg" id="customerImg2" mktoName="Customer Image 2">					
+					<div class="mktoText" id="exampleText" mktoName="Main Body Text">
+						Optionally add default text for the editable text area.
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="bottom-form-section ${bottomFormSectionStyle}" style="display:${showBottomFormSection};">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 form-wrap">
+					<h2>${topFormCTA}</h2>
+					<h3>${topFormSub}</h3>
+					<div class="mktoForm" id="marketoBottomFormSelector" mktoName="Choose a bottom form here"></div>
+				</div>
+				<div class="col-sm-6 form-section-text-images-video-wrap">
+					<div class="text-area">
+						<div class="mktoText" id="formSectionBottomText1" mktoName="Main Body Text">
+							Optionally add default text for the editable text area.
+						</div>
+					</div>
+					<div class="img-area">
+						<img class="mktoImg" id="formAreaImg2" mktoName="Bottom Form Image">
+					</div>
+    				<div class="video-area">
+    					<div class="mktoVideo" id="bottomYouTubeVideo" mktoName="Video Hosted on YouTube"></div>
+						<div class="mktoText" id="otherBottomVideo" mktoName="Other Video Platform ex. Wistia, Vimeo embed code"></div>
+    				</div>
+					<div class="text-area">
+						<div class="mktoText" id="formSectionBottomText2" mktoName="Main Body Text">
+							Optionally add default text for the editable text area.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<p class="small copyright"></p>
+	</footer>	
+    <script src="//templates.marketo.net/template1/js/jquery.min.js"></script>
+    <script src="//templates.marketo.net/template1/js/bootstrap.min.js"></script>
+    <script src="//templates.marketo.net/template1/js/retina-1.1.0.js"></script>
+	<script src="https://use.typekit.net/lnj3egx.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	<script>
+		function marketoFormReset(){
+		var $jQ = jQuery.noConflict();
+		$=jQuery;
+		$jQ('.mktoForm input, .mktoForm textarea, .mktoForm label, .mktoForm .mktoFormCol, .mktoForm .mktoButtonWrap, .mktoRequired').removeAttr('style');
+		$jQ('.mktoForm, .mktoForm input, .mktoForm select').css('width', '100%');
+		$jQ('.mktoOffset, .mktoGutter').remove();
+		$jQ('.mktoForm').find("label.mktoLabel").each(function(){
+			if ($(this).parent().hasClass("mktoRequiredField")) {
+				$("input#"+$(this).attr("for")).attr("placeholder" , $(this).text().replace("*","").replace(":","")+" *");
+			} else {
+				$("input#"+$(this).attr("for")).attr("placeholder" , $(this).text().replace("*","").replace(":",""));
+			}
+			$(this).remove();			
+		});
+		// $jQ('label').remove();
+		$jQ('input.mktoField, input.mktoTextField').removeClass('mktoField').removeClass('mktoTextField');
+		$jQ('.mktoFieldWrap').removeClass('mktoFieldWrap');
+		$jQ('.mktoFormCol').removeClass('mktoFormCol');
+		$jQ('.mktoButtonRow').removeClass('mktoButtonRow');
+		$jQ('.mktoForm button').addClass('register').removeClass('mktoButton');
+		$jQ("input.mktoHasWidth, .mktoHtmlText.mktoHasWidth").removeClass('mktoHasWidth').css({
+		'width':'100%!important',
+		'margin':'0'});
+		}
+		MktoForms2.whenReady(function (form) {
+			marketoFormReset();
+		});
+	</script>
+</body>
+</html>
