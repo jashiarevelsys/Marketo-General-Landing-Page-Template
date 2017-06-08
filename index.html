@@ -13,6 +13,7 @@
 
 <meta class="mktoBoolean" id="showTopFormSection" mktoName="Show top form?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
 <meta class="mktoBoolean" id="pullFormRight" mktoName="Pull form right?" default="false" false_value="" true_value="pull-right" false_value_name="Hide" true_value_name="Show">
+<meta class="mktoColor" id="formBackGroundColor" mktoName="Form Background Color" default="#373B40">
 <meta class="mktoBoolean" id="topFormStyleCenter" mktoName="Center form? Should overide pulling form right" default="false" false_value="" true_value="center" false_value_name="Hide" true_value_name="Center">
 <meta class="mktoString" id="topFormCTA" mktoName="Top Form CTA" default="This is my default value" allowHtml="true">
 <meta class="mktoString" id="topFormSub" mktoName="Top Form Sub" default="This is my default value" allowHtml="true">
@@ -31,6 +32,7 @@
 <meta class="mktoString" id="bottomFormSub" mktoName="Bottom Form Sub" default="This is my default value" allowHtml="true">
 <meta class="mktoBoolean" id="showBackgroundAndOverlay" mktoName="Show Background and Overlay?" default="false" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
 <meta class="mktoString" id="pageBackgroundImage" mktoName="Change background image? Add link to image." default="http://pages.revelsystems.com/rs/804-YHP-876/images/background-default.jpg" >
+<meta class="mktoString" id="otherPixels" mktoName="Drop in other Pixels here" allowHtml="true">
 <style>
 
 </style>
@@ -51,7 +53,7 @@
 		<div class="container text-center">
 			<div class="row">
 				<div class="col-sm-6 ${pullFormRight}">
-					<div class="form-wrap">
+					<div class="form-wrap" style="background-color: ${formBackGroundColor};">
 						<p>${topFormCTA}</p>
 						<h2>${topFormSub}</h2>
 						<div class="mktoForm" id="marketoFormSelector" mktoName="Choose a form here"></div>
@@ -127,7 +129,7 @@
 		<div class="container text-center">
 			<div class="row">
 				<div class="col-sm-6">
-					<div class="form-wrap">
+					<div class="form-wrap" style="background-color: ${formBackGroundColor};">
 						<h2>${topFormCTA}</h2>
 						<h3>${topFormSub}</h3>
 						<div class="mktoForm" id="marketoBottomFormSelector" mktoName="Choose a bottom form here"></div>
@@ -192,5 +194,6 @@
 			marketoFormReset();
 		});
 	</script>
+	${otherPixels}
 </body>
 </html>
