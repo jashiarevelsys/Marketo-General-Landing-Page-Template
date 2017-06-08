@@ -1,0 +1,70 @@
+* {
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 22px; }
+
+h1, h2, h3 {
+  color: #00A3E0; }
+
+.section {
+  padding: 20px 0px;
+  position: relative;
+  z-index: 10; }
+
+header {
+  padding: 20px;
+  position: relative;
+  z-index: 10; }
+
+.back-image-and-overlay {
+  position: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+  .back-image-and-overlay .the-overlay {
+    background-color: rgba(230, 230, 230, 0.74);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; }
+
+.form-wrap {
+  background-color: #373B40;
+  padding: 30px;
+  border-radius: 6px;
+  /*margin-left: 20px;*/ }
+  .form-wrap p, .form-wrap h2 {
+    color: white;
+    text-align: left; }
+  .form-wrap .mktoForm {
+    margin: 0px auto;
+    width: 90% !important; }
+    .form-wrap .mktoForm .mktoFormRow {
+      margin: 10px 0px; }
+      .form-wrap .mktoForm .mktoFormRow input, .form-wrap .mktoForm .mktoFormRow select {
+        padding: 10px;
+        border-radius: 6px;
+        border: thin solid #00A3E0;
+        height: 50px;
+        color: #373B40; }
+      .form-wrap .mktoForm .mktoFormRow .mktoRequiredField {
+        position: relative; }
+    .form-wrap .mktoForm .mktoButtonWrap button {
+      width: 100%;
+      border: thin solid;
+      border-radius: 6px;
+      border-color: #00A3E0;
+      border-width: 1px;
+      background-color: #00A3E0;
+      color: white; }
+      .form-wrap .mktoForm .mktoButtonWrap button:hover {
+        color: #00A3E0;
+        background-color: white; }
+
+.two-points .customerLogo {
+  max-width: 200px;
+  max-height: 100px; }
