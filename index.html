@@ -12,8 +12,8 @@
 <meta class="mktoString" id="topValueHeroSub" mktoName="Top Value Hero Sub" default="This is my default value" allowHtml="true">
 
 <meta class="mktoBoolean" id="showTopFormSection" mktoName="Show top form?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
-<meta class="mktoBoolean" id="pullFormRight" mktoName="Show bottom form?" default="false" false_value="" true_value="pull-right" false_value_name="Hide" true_value_name="Show">
-<meta class="mktoString" id="topFormSectionStyle" mktoName="Form Section Style: left, right, or center. Lowercase." default="left" allowHtml="true">
+<meta class="mktoBoolean" id="pullFormRight" mktoName="Pull form right?" default="false" false_value="" true_value="pull-right" false_value_name="Hide" true_value_name="Show">
+<meta class="mktoBoolean" id="topFormStyleCenter" mktoName="Center form? Should overide pulling form right" default="false" false_value="" true_value="center" false_value_name="Hide" true_value_name="Center">
 <meta class="mktoString" id="topFormCTA" mktoName="Top Form CTA" default="This is my default value" allowHtml="true">
 <meta class="mktoString" id="topFormSub" mktoName="Top Form Sub" default="This is my default value" allowHtml="true">
 
@@ -30,6 +30,7 @@
 <meta class="mktoString" id="bottomFormCTA" mktoName="Bottom Form CTA" default="This is my default value" allowHtml="true">
 <meta class="mktoString" id="bottomFormSub" mktoName="Bottom Form Sub" default="This is my default value" allowHtml="true">
 <meta class="mktoBoolean" id="showBackgroundAndOverlay" mktoName="Show Background and Overlay?" default="false" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+<meta class="mktoString" id="pageBackgroundImage" mktoName="Change background image? Add link to image." default="http://pages.revelsystems.com/rs/804-YHP-876/images/background-default.jpg" >
 <style>
 
 </style>
@@ -46,7 +47,7 @@
 			<h2>${topValueHeroSub}</h2>
 		</div>
 	</section>
-	<section class="section top-form-section ${topFormSectionStyle}" style="display:${showTopFormSection};">
+	<section class="section top-form-section ${topFormStyleCenter}" style="display:${showTopFormSection};">
 		<div class="container text-center">
 			<div class="row">
 				<div class="col-sm-6 ${pullFormRight}">
@@ -62,13 +63,8 @@
 							Optionally add default text for the editable text area.
 						</div>
 					</div>
-					<div class="img-area">
-						<img class="mktoImg img-responsive" id="formAreaImg" mktoName="Form Area Image">
-					</div>
-    				<div class="video-area">
-    					<div class="mktoVideo" id="youTubeVideo" mktoName="Video Hosted on YouTube"></div>
-						<div class="mktoText" id="otherVideo" mktoName="Other Video Platform ex. Wistia, Vimeo embed code" allowHtml="true"></div>
-    				</div>
+					<img class="mktoImg img-responsive" id="formAreaImg" mktoName="Form Area Image">
+					<div class="mktoText embed-responsive embed-responsive-16by9" id="otherVideo" mktoName="Other Video Platform ex. Wistia, Vimeo embed code" allowHtml="true"></div>
 					<div class="text-area">
 						<div class="mktoText" id="formSectionTopText2" mktoName="Form Section Bottom Text">
 							Optionally add default text for the editable text area.
@@ -78,25 +74,25 @@
 			</div>
 		</div>
 	</section>
-	<section class="section 3-feature-points" style="display:${showThreeFeaturePointsSection};">
+	<section class="section three-feature-points" style="display:${showThreeFeaturePointsSection};">
 		<div class="container text-center">
 			<h2>${threeFeatureCTA}</h2>
 			<h3>${threeFeatureSub}</h3>
 			<div class="row">
 				<div class="col-sm-4">
-					<img class="mktoImg img-responsive" id="threeFeatureImg1" mktoName="Three Feature Img 1">					
+					<img class="mktoImg img-responsive featureImage" id="threeFeatureImg1" mktoName="Three Feature Img 1">					
 					<div class="mktoText" id="threeFeatureText1" mktoName="Three Feature Text 1">
 						Optionally add default text for the editable text area.
 					</div>
 				</div>
 				<div class="col-sm-4">
-					<img class="mktoImg img-responsive" id="threeFeatureImg2" mktoName="Three Feature Img 2">					
+					<img class="mktoImg img-responsive featureImage" id="threeFeatureImg2" mktoName="Three Feature Img 2">					
 					<div class="mktoText" id="threeFeatureText2" mktoName="Three Feature Text 2">
 						Optionally add default text for the editable text area.
 					</div>
 				</div>
 				<div class="col-sm-4">
-					<img class="mktoImg img-responsive" id="threeFeatureImg3" mktoName="Three Feature Img 3">			
+					<img class="mktoImg img-responsive featureImage" id="threeFeatureImg3" mktoName="Three Feature Img 3">			
 					<div class="mktoText" id="threeFeatureText3" mktoName="Three Feature Text 3">
 						Optionally add default text for the editable text area.
 					</div>
@@ -143,13 +139,8 @@
 							Optionally add default text for the editable text area.
 						</div>
 					</div>
-					<div class="img-area">
-						<img class="mktoImg img-responsive" id="formAreaImg2" mktoName="Bottom Form Image">
-					</div>
-    				<div class="video-area">
-    					<div class="mktoVideo" id="bottomYouTubeVideo" mktoName="Video Hosted on YouTube"></div>
-						<div class="mktoText" id="otherBottomVideo" mktoName="Other Video Platform ex. Wistia, Vimeo embed code"></div>
-    				</div>
+					<img class="mktoImg img-responsive" id="formAreaImg2" mktoName="Bottom Form Image">
+					<div class="mktoText embed-responsive embed-responsive-16by9" id="otherBottomVideo" mktoName="Other Video Platform ex. Wistia, Vimeo embed code"></div>
 					<div class="text-area">
 						<div class="mktoText" id="formSectionBottomText2" mktoName="Main Body Text">
 							Optionally add default text for the editable text area.
@@ -162,7 +153,7 @@
 	<footer>
 		<p class="small copyright"></p>
 	</footer>	
-	<div class="back-image-and-overlay" style="background-image: url('http://pages.revelsystems.com/rs/804-YHP-876/images/background-default.jpg'); display:${showBackgroundAndOverlay};">
+	<div class="back-image-and-overlay" style="background-image: url('${pageBackgroundImage}'); display:${showBackgroundAndOverlay};">
 		<div class="container the-overlay">
 			
 		</div>

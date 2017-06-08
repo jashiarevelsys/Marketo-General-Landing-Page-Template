@@ -80,9 +80,31 @@ header {
 		}
 	}
 }
+section.center {
+	.col-sm-6 {
+		width: 100%;
+		.form-wrap {
+			max-width: 570px;
+			margin: 0px auto;
+			.mktoForm {
+				width: 100% !important;
+				.mktoFormRow {
+					select {
+						width: 100% !important;
+					}
+				}
+			}
+		}
+	}
+
+}
+.three-feature-points {
+	.featureImage {
+		height: 100px;
+	}
+}
 .two-points {
 	.customerLogo {
-		max-width: 200px;
 		max-height: 100px;
 	}
 }

@@ -65,6 +65,18 @@ header {
         color: #00A3E0;
         background-color: white; }
 
+section.center .col-sm-6 {
+  width: 100%; }
+  section.center .col-sm-6 .form-wrap {
+    max-width: 570px;
+    margin: 0px auto; }
+    section.center .col-sm-6 .form-wrap .mktoForm {
+      width: 100% !important; }
+      section.center .col-sm-6 .form-wrap .mktoForm .mktoFormRow select {
+        width: 100% !important; }
+
+.three-feature-points .featureImage {
+  height: 100px; }
+
 .two-points .customerLogo {
-  max-width: 200px;
   max-height: 100px; }
