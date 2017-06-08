@@ -80,3 +80,23 @@ section.center .col-sm-6 {
 
 .two-points .customerLogo {
   max-height: 100px; }
+
+.top-form-section .pull-right .form-wrap {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 35%, 3% 33%, 0 31%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 35%, 3% 33%, 0 31%); }
+  @media (max-width: 767px) {
+    .top-form-section .pull-right .form-wrap {
+      -webkit-clip-path: none;
+      clip-path: none; } }
+
+.top-form-section .form-wrap {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 31%, 97% 33%, 100% 35%, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 31%, 97% 33%, 100% 35%, 100% 100%, 0 100%); }
+  @media (max-width: 767px) {
+    .top-form-section .form-wrap {
+      -webkit-clip-path: none;
+      clip-path: none; } }
+
+.top-form-section.center .form-wrap {
+  -webkit-clip-path: none;
+  clip-path: none; }
